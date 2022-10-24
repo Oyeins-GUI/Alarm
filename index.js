@@ -61,5 +61,4 @@ function alarmChecker() {
 
 function stopAlarm() {
     audio.pause();
-    alarmTimeDisplay.textContent = "00:00:00"
 }
