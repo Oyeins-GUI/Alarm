@@ -60,12 +60,6 @@ function alarmChecker() {
 }
 
 function stopAlarm() {
-    let wakeyHours = document.getElementById("hours-input").value;
-    let wakeyMinutes = document.getElementById("minutes-input").value;
-
-    wakeyHours = ""
-    wakeyMinutes = ""
-
     audio.pause();
     alarmTimeDisplay.textContent = "00:00:00"
 }
