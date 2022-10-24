@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(212, 167, 255);
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.current-time-display, .alarm-time-display {
+    background: rgb(0, 0, 56);
+    color: white;
+    margin: 7px;
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+.alarm-time-display {
+    background: none;
+}
+
+form > label {
+    font-size: 15px;
+    color: rgb(0, 0, 56);
+}
+
+input[type='number'] {
+    width: 55px;
+    height: 35px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    display: block;
+    color: rgb(0, 0, 56);
+    margin: 20px auto 0 auto;
+    padding: 10px 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.96);
+}
